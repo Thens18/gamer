@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Gamers Event Login</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <!-- new button add home-->
+    <main>
+        <a href="feed.html" target="_blank" class="btn --animated">
+            <span>Home</span>
+        </a>
+    </main>
+
+    <!-- button end -->
+
+
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+    background: url('img.jpg') no-repeat center fixed;     
+    background-size: cover;
+    
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+/* new button added */
+:root {
+	--font: 1rem/1.2 "helvetica", sans-serif;
+	--bg-hover: linear-gradient(
+		135deg,
+		#e010e7 0%,
+		#2654e9 20%,
+		#62d6fa 37%,
+		#fff 50%,
+		#fc35ca 66%,
+		#7559ff 72%,
+		#101ee7 100%
+	);
+	--btn-color: #2e175e;
+}
+
+/* formating */
+main {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+/* button */
+.btn {
+	display: table;
+	text-align: top ;
+	color: #ffffff;
+	text-decoration: none;
+	position: relative;
+    left: -750px;
+    top: -400px;
+	font: var(--font);
+	font-weight: bold;
+	padding: 18px 58px;
+	background-color: var(--btn-color);
+	overflow: hidden;
+	margin: 24px;
+}
+
+.--animated {
+	transition: all 1s;
+}
+
+.--animated span {
+	position: relative;
+	z-index: 9;
+}
+
+.--animated:after {
+	height: 100%;
+	width: 2000px;
+	transition: all 1s;
+	background: var(--bg-hover);
+}
+
+.--animated:before {
+	height: 26px;
+	width: 100%;
+	top: -50px;
+	z-index: 10;
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.--animated:hover:before {
+	top: 0;
+	opacity: 1;
+}
+.--animated:hover:after {
+	left: -1750px;
+}
+.--animated:before,
+a:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+	display: block;
+	content: "";
+}
+.--animated:active:before {
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.--animated:active {
+	transform: scale(0.95);
+	transition: all 200ms;
+}
+/*  new button end   */
+form{
+    height: 650px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body oncontextmenu="return false;" ondragstart="return false" onselectstart="return false">
+    
+    <div class="background">
+      <!--  <div class="shape"></div>
+      <div class="shape"></div> -->
+      
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username or E-mail</label>
+        <input type="text" placeholder="Email or name" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <a href="signup.html" style="text-decoration:none;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>
+        </p>  &nbsp; &nbsp; &nbsp; &nbsp; Don't have a account Sign up</a>
+
+        
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
