@@ -2829,8 +2829,9 @@ header .uk-dropdown {
 .story-modal .story-content {
   height: 70vh;
 }
+/* end of event page */
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) {     /* new event page added */
   .story-modal {
     min-height: 100vh;
     -webkit-box-orient: vertical;
@@ -2849,3 +2850,4 @@ header .uk-dropdown {
   }
 }
  
+/* every thing added  */
